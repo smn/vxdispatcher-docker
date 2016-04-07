@@ -7,11 +7,11 @@ receive_outbound_connectors:
 
 routing_table:
   messenger_transport:
-    default: ["faqbrowser", "messenger"]
+    default: ["faqbrowser", "default"]
 
   whatsapp_transport:
     default: ["faqbrowser", "whatsapp"]
 
   faqbrowser:
-    messenger: ["messenger_transport", "default"]
+    default: ["messenger_transport", "default"]
     whatsapp: ["whatsapp_transport", "default"]
