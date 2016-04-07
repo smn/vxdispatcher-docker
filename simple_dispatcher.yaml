@@ -1,11 +1,9 @@
-router_class: vumi.dispatchers.SimpleDispatchRouter
+router_class: vumi.dispatchers.load_balancer.LoadBalancingRouter
+reply_affinity: true
+
 transport_names:
   - messenger_transport
   - whatsapp_transport
 
 exposed_names:
   - faqbrowser
-
-route_mappings:
-  messenger_transport: faqbrowser
-  whatsapp_transport: faqbrowser
