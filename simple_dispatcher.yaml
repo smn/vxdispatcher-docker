@@ -1,11 +1,11 @@
 router_class: vumi.dispatchers.SimpleDispatchRouter
 transport_names:
-  - 57fe1098-6f4f-490d-ac15-81d06abfc593
-  - 8c16fb81-edc4-4789-bf59-0b620ad6f1cd
+  - "57fe1098-6f4f-490d-ac15-81d06abfc593"
+  - "8c16fb81-edc4-4789-bf59-0b620ad6f1cd"
 
 exposed_names:
   - faqbrowser
 
 route_mappings:
-  57fe1098-6f4f-490d-ac15-81d06abfc593: faqbrowser
-  8c16fb81-edc4-4789-bf59-0b620ad6f1cd: faqbrowser
+  "57fe1098-6f4f-490d-ac15-81d06abfc593": faqbrowser
+  "8c16fb81-edc4-4789-bf59-0b620ad6f1cd": faqbrowser
