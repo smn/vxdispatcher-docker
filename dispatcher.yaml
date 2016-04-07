@@ -1,0 +1,17 @@
+receive_inbound_connectors:
+  - messenger_transport
+  - whatsapp_transport
+
+receive_outbound_connectors:
+  - faqbrowser
+
+routing_table:
+  messenger_transport:
+    default: ["faqbrowser", "messenger"]
+
+  whatsapp_transport:
+    default: ["faqbrowser", "whatsapp"]
+
+  faqbrowser:
+    messenger: ["messenger_transport", "default"]
+    whatsapp: ["whatsapp_transport", "default"]
